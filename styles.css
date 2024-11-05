@@ -1,0 +1,229 @@
+@import url(./header.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url(./contato.css);
+@import url(./carrossel.css);
+@import url(./card.css);
+@import url(./footer.css);
+
+
+:root{ 
+    --color-of-background:#EBECEE;
+    --color-of-header:#FFFFFF;
+    --color-title-munu-list:#EB9B00;
+    --color-items-meunu-list:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font-principal:"Poppins", sans-serif;
+    --color-font-bleu:#002F52;
+    --font-secondaire:"Josefin Sans", sans-serif;
+    --cor-font-footer:#474646;
+}
+
+body{
+    background-color: var(--color-of-background);
+    
+  
+}
+*{margin:0;
+padding:0;}
+
+.banner{
+    background: var(--color-items-meunu-list);
+    color: var(--color-of-header);
+    text-align: center;
+    font-family: var(--font-principal);
+    padding: 2.5em 1.5em;
+    
+}
+.banner__title{
+    
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+.banner__text{
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 1.5em;
+}
+.banner__search{
+    background-color: transparent;
+    border: solid 2px var(--color-of-header);
+    border-radius: 24px;
+    width: 100%;
+    padding: 0.9em 0;
+   
+   text-align: center;
+   font-family: var(--font-principal);
+   color: var(--color-of-header);
+   font-weight: 400;
+   font-size: 0.87rem;
+
+}
+.banner__search::placeholder{
+   
+    background: url(./assets/Lupa.svg) no-repeat;
+    background-position: 2em;
+}
+
+
+.rating{
+    display: inline-block;
+}
+.star::before{
+    content:"\2605";
+    color: var(--color-title-munu-list);
+}
+.bande-blanc{
+    height: 1.5rem;
+    width: 100vw;
+    background-color: var(--color-of-header);
+    
+}
+.banner2__title{
+font-weight: 300;
+margin-bottom: 3em;
+}
+
+.banner__list__links{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.banner__link {
+   
+    display: inline-block;
+    background-color: var(--color-title-munu-list);
+    padding: 1.3em;
+   
+}
+
+.banner__link a{
+    text-decoration: none;
+    color: var(--color-of-header);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+.banner2 {
+    background: var(--color-items-meunu-list);
+    color: var(--color-of-header);
+    text-align: center;
+    font-family: var(--font-principal);
+    padding: 2.5em 1.5em 1.5em 1.5em; 
+    
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+
+
+    .banner{
+        padding: 4em 0;
+        
+    }
+    .banner__title{
+        
+        font-size: 2.25rem;
+    }
+    .banner__text{
+
+        margin: 1.5em;
+    }
+    .banner__search{
+       
+        border: solid 1px ;
+        width: 45%;
+        padding: 0.85em 0;
+       
+       font-size: 1rem;
+    
+    }
+    .banner__search::placeholder{
+       
+        background-position: 3em;
+    }
+    .banner2 {
+        
+        padding: 3em 5em 1.5em 5em; 
+        
+    }
+
+    .banner2__title{
+        font-size: 2rem;
+        margin-bottom: 1.5em;
+        }
+        
+       
+        .banner__link {
+           
+            padding: 1.3em;
+           
+        }
+        
+        .banner__link a{
+        
+            font-size: 2rem;
+        }
+
+.bande-blanc{display: none;}
+.orietationobjet{order:-1;}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1728px){
+
+    .banner2 {
+        
+        padding: 5em 35em 5em 35em; 
+        
+    }
+
+    .banner2__title{
+        font-size: 2rem;
+        margin-bottom: 2em;
+        }
+        
+       
+        .banner__link {
+           
+            padding: 1.5em;
+           
+        }
+        
+        .banner__link a{
+        
+            font-size: 1.5rem;
+        }
+
+.bande-blanc{display: none;}
+.orietationobjet{order:-1;}
+
+.banner__search{width: 35%;}
+
+
+
+.banner3{
+
+    padding: 5em 0;
+}
+    
+}
+    
